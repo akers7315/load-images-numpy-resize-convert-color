@@ -34,11 +34,10 @@ import numpy as np
 X = []
 
 for filename in glob.glob('file-path\\*.jpg'): #assuming gif
-    #print (filename)
     img = cv2.imread(filename)
-    
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     resized_img = cv2.resize(gray_img, (200, 200))
+    
     X.append(resized_img)
 
 X = np.asarray(X)
