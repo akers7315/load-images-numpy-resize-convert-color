@@ -40,7 +40,7 @@ import numpy as np
 
 X = []
 
-for filename in glob.glob('C:\\Users\\rober\\OneDrive\\Desktop\\ecchi\\*.jpg'): #assuming gif
+for filename in glob.glob('file-path\\*.jpg'): #assuming gif
     #print (filename)
     img = cv2.imread(filename)
     
